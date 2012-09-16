@@ -1,0 +1,22 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+html {
+  background: $header-bg;
+}
+body header {
+  padding: 1em;
+}
+header hgroup {
+  text-align: right;
+  h1 {
+    font-family: "Coda Caption", sans-serif;
+    font-weight: 800;
+    font-size: 2.5em;
+    line-height: .5em;
+    small {
+      font-size: .5em;
+      color: #000;
+    }
+  }
+}

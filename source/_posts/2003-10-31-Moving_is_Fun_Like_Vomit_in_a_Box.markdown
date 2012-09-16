@@ -1,0 +1,19 @@
+---
+layout: post
+title: Moving is Fun Like Vomit in a Box 
+tags: [thailand, sangkhlaburi] 
+---
+
+Some theories suggest humans have an internal counter or limit governing the numbers of times one can move/change houses in a lifetime. Possibly I am getting close to that limit, or maybe moving in a (very?) foreign country amplifies the effect. Or maybe I'm just getting old and lazy. No matter how you look at it, moving is hard work, and I'm glad it's over. I won't be moving again...that is...until next time.
+
+Of course the logistics of moving all our stuff (large motorbike, large dog, bicycles, clothes, etc.) 900 kilo- meters from a very remote area to a city (without a car or a truck) poses minor problems. As a lot of nice wooden furniture is moved between nearby Three Pagoda Pass (Burmese border) and the rest of Thailand, there are many pickup trucks with big metal cages on back designed to carry tons of stuff. My idea was to just offer one of these guys some money to take us to Chiang Mai. However, Anchali asked her students for ideas, and one student said his dad had a truck and drove to Chiang Mai regularly. The only problem...his truck didn't have any sort of cage and I just could not picture everything fitting. My bothersome western practicality called for more ideas, plans, etc. Our driver Manop just kept saying no problem, it would fit. Of course it fit...people here know and push the limits of what they have to work with daily.
+
+So we loaded up the truck Sunday night with the help of about 20 students. Luckily we had sold the big stuff like the fridge and the bed, and a lot of the medium sized things too. Sunday morning when Aue Mon helped me take the fridge out, we scared the shit (literally) out of a family of four mice living under- neath. As I have said, our house had no shortage of furry and crawly visitors.
+
+After (trying to) sleep on a few bamboo mats and missing the big, sold, bed we got up early and car- ried the final load up to the truck. Most of our students came by to say goodbye again, and a few of the younger ones were close to tears. The truck was full, Dukdik was lifted into his cage, and we headed out to pick up Manop's friend (a Thai policeman) who would be driving buddy for the 13 hour trip. The first 75k out of here to Thong Pha Phoom is very windy and mountainous. Dukdik has been in a truck once before, and his doggy stomach just didn't know what to make of his situation. Needless to say, he was soon swimming in his own vomit...unfortunately for the remainder of the trip.
+
+Manop and friend couldn't speak any English, so I had to try and listen and speak Thai the entire trip. It almost seems like when I concentrate on understanding, I can't understand at all. When I listen casually without thinking, I can usually follow the general meaning of the conversation. It was mentally exhausting and sometimes I just would tune out completely. Manop was a safe and great driver, checking his truck regularly, and even stopping for an oil change along the way.
+
+Around 9pm we arrived at our new house, and everyone was in awe. Living here makes me feel sort of like I've been camping for the last 10 months. Big rooms with screens, beautiful brick and tile, garden, deck, little fish pond! We ordered a pizza for dinner...and had it delivered! No, we were not in Sangkhlaburi anymore. Dukdik was not sure what happened or where he was, but was certainly happy to be out of his vomit filled cage. I was happy to be out of the overly air-conditioned truck!
+
+The last few days have been a lot of work unpacking, buying new things for the house, and adjusting to the new area. Luckily for me, the house RIGHT next to us, close to the bedroom, has chickens! In addition, they also have geese, as well as a St. Bernard that barks pretty much all the time. No blaring Thai pop though...at least not yet.

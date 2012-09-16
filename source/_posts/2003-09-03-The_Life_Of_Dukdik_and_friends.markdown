@@ -1,0 +1,19 @@
+---
+layout: post
+title: The Life of Dukdik and Friends 
+tags: [thailand, sangkhlaburi] 
+---
+
+Being a dog in the Mon village Baan Wangka is hard, dangerous work. We are not sure of Dukdik's puppy- hood, but he adopted us about 6 months ago when we moved here. Anchali loves dogs, and in Chiang Mai always pestered me to get one. Being the practical, forward thinking person that I am, I always said NO, we must wait until we have a good house and area for a dog. All of that changed when we arrived in Baan Wangka!
+
+Anchali had an idea to help feed and vaccinate stray dogs here, inspired by a woman in Chiang Mai. Unfortunately, she underestimated the dog situation/problem, along with the human situation. There were simply too many starving, sick, miserable stray dogs to help, combined with the fact that there are also plenty of hungry people, she decided to abandon the project. We felt that giving food to dogs would not go over too well with the people who did not have enough food for themselves. Later, this decision proved to be wise as we learned Mon people generally treat dogs as a nuisance and not as a pet. Usually if someone "has a dog" it means they let it stay outside their house and eat leftover rice or food once a day.
+
+Back to Dukdik's story...on our third day here, a big, skinny, dirty Rottweiler and a small, skinny, dirty "Thai" dog stopped by our house for a visit. Most of the dogs here are similar...smallish with short hair. Seeing what looked like a purebred Rotweiler was a little bit out of the ordinary! Amazingly, Anchali's favorite type of dog happened to be a Rotweiler (long before we came here, she told me when we get a dog, it must be a Rotweiler or German Shepherd). Anyway, we gave the smelly pair some snacks and that was it...they took over the area in front of our house and accompanied us everywhere.
+
+We learned the Rotweiler's name was Dukdik, and gave the other dog the name Boon Rawd. Unfortunately Boon Rawd proved to be nothing but trouble...breaking into our house to steal food and not letting Anchali give it a bath. The final straw was when she bit a girl. We decided we could not really take care of this dog and sadly stopped giving her food. This was a tough decision, but she had survived for a few years without us and was not with us long enough to forget how to survive. We still see here from time to time, and heard someone else is giving her food from time to time so that is good.
+
+Dukdik proved to be a funny, independent, sometimes loyal, and usually interesting dog. If Anchali leaves the house to go anywhere, Dukdik is guaranteed to go along as well. If I go out and Anchali stays at home, Dukdik stays at home. He grudgingly lets Anchali wash him and disinfect his daily cuts and scrapes from fighting. Our house is surrounded by a 5 foot cement wall topped with broken glass. No problem for Dukdik if he wants to go in our out...he jumps it! Being the big dog among a village of smaller dogs has its advantages.
+
+The last few weeks have been out of control dog-wise. All of the females are in heat, so it is dog chaos. Dukdik is out every night and shows up at home to eat and sleep in the late morning. His injuries are numerous and more serious (last week we were sure he broke his leg), but he MUST go back for more. There is no vet here...the closest one is in Kanchanaburi 225k away. If a dog is seriously injured it is killed. Nobody even thinks about doggy birth control (or human birth control for that matter) so the problem will just continue to grow.
+
+We will just hope for good luck with Dukdik. Our friend the policeman bought us some vaccines, and Dukdik gets real dog food (imported from Kanchanaburi, to the amazement of our students and people here). Hopefully he realizes how lucky he is to have adopted us, and will survive whatever adventures come along next.
