@@ -18,7 +18,8 @@ This is a [CakePHP][1] plugin consisting of one component and one helper that ma
 
 Global configuration is optional, but useful. You can put default values in app/config/bootstrap.php or app/config/core.php like this:
 
-{% highlight php startinline=true %}
+``` php
+<?php
 Configure::write('Flickr.posting_url', 'http://api.flickr.com/services/rest/');
 Configure::write(
     'Flickr.defaults', array(
@@ -29,7 +30,7 @@ Configure::write(
         'extras' => 'description, date_taken'
     )
 );
-{% endhighlight %}
+```
 
 Pretty much any option available by the [Flickr API][3] can go here. All defaults can be overridden/replaced in your controller as needed.
 

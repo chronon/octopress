@@ -4,19 +4,35 @@
 html {
   background: $header-bg;
 }
-body header {
-  padding: 1em;
-}
-header hgroup {
-  text-align: right;
-  h1 {
-    font-family: "Coda Caption", sans-serif;
-    font-weight: 800;
-    font-size: 2.5em;
-    line-height: .5em;
-    small {
-      font-size: .5em;
-      color: #000;
+body {
+  font-size: 1em;
+  > header h1 { line-height: .7em; }
+  > footer { border-bottom: 1px solid #333; }
+  > div {
+      background: image-url('bg_white75.png');
+      border-bottom: none;
     }
-  }
+}
+a { text-decoration: none; }
+a:visited { color: #1863A1; }
+
+.subtitle {
+  font-size: .5em;
+  color: #000;
+}
+
+#content .blog-index article h1, h1 {
+  font-size: 1.8em;
+  line-height: 1.0em;
+}
+#content .blog-index article h1 a:hover, #blog-archives article h1 a:hover { 
+  text-decoration: none;
+}
+
+aside.sidebar {
+  font-size: 1.15em;
+}
+
+ul, ol {
+  margin-left: 1em;
 }
