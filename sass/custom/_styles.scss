@@ -1,24 +1,41 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
+$tech-border: 1px solid #333;
+
 html {
-  background: $header-bg;
+  background: image-url('bg_woody_bw.jpg') repeat fixed;
 }
 body {
   font-size: 1em;
   > header h1 { line-height: .7em; }
-  > footer { border-bottom: 1px solid #333; }
+  > nav {
+      border-left: $tech-border; 
+      border-right: $tech-border; 
+    }
+  > footer { 
+      border-bottom: $tech-border; 
+      border-left: $tech-border;
+      border-right: $tech-border;
+    }
   > div {
       background: image-url('bg_white75.png');
       border-bottom: none;
     }
+  > #main {
+      border-left: $tech-border;
+      border-right: $tech-border;
+    }
 }
+
 a { text-decoration: none; }
 a:visited { color: #1863A1; }
 
 .subtitle {
-  font-size: .5em;
+  font-size: 1.1em;
+  font-family: $header-subtitle-font-family;
   color: #000;
+  font-weight: bold;
 }
 
 #content .blog-index article h1, h1 {
