@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Off Road Adventure 
-tags: [thailand] 
+date: 2004-03-03
+categories: [thailand] 
 ---
 
 The end of the cool season is upon us here in Chiang Mai. That is bad. However, today I woke to a beautiful, clear, and not so hot morning and knew real (computer) work would (ummm could) not be a priority. After a few decisions concerning mode of transport and where to go, I was activated! The tool of choice was Lamyai, my very sexy Honda XR250 dirt bike, and we were going to climb Doi Pui...on the back side!

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: VOGUE Exquisite
-tags: [engrish, technokracy] 
+date: 2008-01-24
+categories: [engrish, technokracy] 
 ---
 
 ### Function:

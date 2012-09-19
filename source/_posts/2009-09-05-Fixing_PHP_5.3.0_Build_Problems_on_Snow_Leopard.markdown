@@ -1,26 +1,31 @@
 ---
 layout: post
 title: Fixing PHP 5.3.0 Build Problems on Snow Leopard
-tags: [os-x, dev] 
+date: 2009-09-05
+categories: [os-x, dev] 
 ---
 
 Building PHP from source on 10.6 produced a new problem I've not seen before. After successfully configuring and a few minutes of building, a link error stops the show, with the end part looking like:
 
-    Undefined symbols: " res 9 dn expand", referenced from:
-    zif	dns	get	mx in dns.o " res 9 search", referenced from:
-    zif	dns	get	mx in dns.o
-    zif	dns	check	record in dns.o " res 9 dn skipname", referenced from:
-    zif	dns	get	mx in dns.o
-    zif	dns	get	mx in dns.o
-    ld: symbol(s) not found
-    collect2: ld returned 1 exit status
-    make: *** [libs/libphp5.bundle] Error 1
-    Error: Status 1 encountered during processing.
+```
+Undefined symbols: " res 9 dn expand", referenced from:
+zif	dns	get	mx in dns.o " res 9 search", referenced from:
+zif	dns	get	mx in dns.o
+zif	dns	check	record in dns.o " res 9 dn skipname", referenced from:
+zif	dns	get	mx in dns.o
+zif	dns	get	mx in dns.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+make: *** [libs/libphp5.bundle] Error 1
+Error: Status 1 encountered during processing.
+```
 
 Some searching found MacPorts users were [seeing the same problem][1], and the culprit was lresolv.
 
 Simply adding a configure environment variable before the actual configure command created a Makefile which worked:
 
-    LIBS=-lresolv ./configure --with-apxs2 --with-gd (etc.)
+```
+LIBS=-lresolv ./configure --with-apxs2 --with-gd (etc.)
+```
 
  [1]: http://trac.macports.org/ticket/19997

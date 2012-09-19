@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Fun with Languages
-tags: [thailand, engrish] 
+date: 2003-07-23
+categories: [thailand, engrish] 
 ---
 
 For almost everyone, learning a foreign language is a difficult undertaking. Learning a VERY foreign language, such as Thai (for a Westerner) or English (for an Easterner) opens up a whole new set of challenges. I have strategically omitted any references to my language mistakes, and laugh at the mistakes of others. Heh heh heh.

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Boom Bus 
-tags: [thailand, sangkhlaburi] 
+date: 2003-07-29
+categories: [thailand, sangkhlaburi] 
 ---
 
 Earlier this month Anchali and I were on the bus from Kanchanaburi to Sangkhlaburi on our way back home from our trip North. The bus seemed a little bit newer and nicer than the standard beat-up air-con Thai bus, but was still nothing special. At least that is what I thought.

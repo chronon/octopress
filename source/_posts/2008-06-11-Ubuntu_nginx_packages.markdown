@@ -2,7 +2,8 @@
 layout: post
 title: Unofficial Ubuntu nginx packages
 description: "Unofficial Ubuntu nginx packages - no longer maintained"
-tags: [dev, sysadmin] 
+date: 2008-06-11
+categories: [dev, sysadmin] 
 ---
 
 Upate:

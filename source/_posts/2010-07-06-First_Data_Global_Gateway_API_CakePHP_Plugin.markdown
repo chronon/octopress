@@ -3,7 +3,8 @@ layout: post
 title: First Data Global Gateway API CakePHP Plugin
 description: "A CakePHP plugin for the First Data Global Gateway API for
 credit card processing"
-tags: [dev, cakephp] 
+date: 2010-07-06
+categories: [dev, cakephp] 
 ---
 
 The Ggapi plugin component simplifies credit card processing using the First Data/Yourpay/Linkpoint Global Gateway API. It supports testing and live configurations, along with local to remote field mapping.
@@ -23,7 +24,8 @@ Requirements
 Example usage in your controller
 --------------------------------
 
-{% highlight php startinline=true %}
+``` php
+<?php
 // attempt the charge (array $data, boolean $testing)
 $response = $this->Ggapi->ggProcess($data, true);
 
@@ -51,7 +53,7 @@ if ($response) {
     );
     $this->redirect(array('controller' => 'orders', 'action' => 'checkout'));
 }
-{% endhighlight %}
+```
 
 The Bakery Article
 ------------------

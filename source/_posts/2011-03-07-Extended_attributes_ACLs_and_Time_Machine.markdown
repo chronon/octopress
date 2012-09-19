@@ -2,7 +2,8 @@
 layout: post
 title: Extended attributes, ACLs, and Time Machine
 description: "Understanding Mac OS X extended attributes and ACLs"
-tags: [os-x]
+date: 2011-03-07
+categories: [os-x]
 ---
 
 Copying from a Time Machine backup...
@@ -35,18 +36,24 @@ OS X Extended Attributes
 Copying directly from the Time Machine backup also copied extended attributes
 and ACLs, which I definitely didn't want. The command
 
-    xattr my_repository.git
+``` sh
+xattr my_repository.git
+```
 
 told me things like `com.apple.metadata:_kTimeMachineOldestSnapshot` and 
 `com.apple.metadata:_kTimeMachineNewestSnapshot` were attached to the directory 
 and it's files. To remove:
 
-    sudo xattr -d -r 'com.apple.metadata:_kTimeMachineOldestSnapshot' my_repository.git
-    sudo xattr -d -r 'com.apple.metadata:_kTimeMachineNewestSnapshot' my_repository.git
+``` sh
+sudo xattr -d -r 'com.apple.metadata:_kTimeMachineOldestSnapshot' my_repository.git
+sudo xattr -d -r 'com.apple.metadata:_kTimeMachineNewestSnapshot' my_repository.git
+```
 
 To learn more about xattr:
     
-    xattr -h
+``` sh
+xattr -h
+```
 
 OS X ACLs
 ---------
@@ -56,7 +63,9 @@ Now `ls -l` gave me `drwxr-xr-x+`, with the `+` meaning the directory has ACL
 to the repository, even though the standard user:group permissions said I
 could. To remove the ACL restrictions:
 
-    sudo chmod -R -a# 0 my_repository
+``` sh
+sudo chmod -R -a# 0 my_repository
+```
 
 Finally, `ls -l` returns plain old `drwxr-xr-x`, and I could push to my
 repository. What a wonderful waste of time!

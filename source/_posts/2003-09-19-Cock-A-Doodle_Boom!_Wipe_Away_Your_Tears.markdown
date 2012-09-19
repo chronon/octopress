@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Cock-A-Doodle Boom! Wipe Away Your Tears 
-tags: [thailand, sangkhlaburi] 
+date: 2003-09-19
+categories: [thailand, sangkhlaburi] 
 ---
 
 One of the advantages of living off the beaten path (or off the grid, in the middle of nowhere, etc.) should be peace and quiet, right? I mean, I have to ride over 70k on a narrow, twisty, mountainous road to get to an ATM which sometimes works. Amazingly I'd venture to say this is the noisiest place I've lived yet! Kids playing with big firecrackers make up for the gunfire of Richmond and Albuquerque, and the semi-broken smoke spewing two stroke motorbikes are louder than "traffic" anywhere.

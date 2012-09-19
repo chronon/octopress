@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Water
-tags: [thailand, sangkhlaburi] 
+date: 2003-07-26
+categories: [thailand, sangkhlaburi] 
 ---
 
 It has been raining here for six days. Pretty much non-stop. Baan Wangka, the village I live in, sits on a hill above the river. As gravity works the same here as it does in most places, water drains down the hill into the river. Baan Wangka has a lot of dirt, and dirt likes to mix with water when it gets the opportunity. So when it rains, the water (and included dirt) make the river rise, and make it brown. Very brown.

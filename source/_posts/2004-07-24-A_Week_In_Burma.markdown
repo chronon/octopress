@@ -1,7 +1,8 @@
 ---
 layout: post
 title: A Week In Burma 
-tags: [travel] 
+date: 2004-07-24
+categories: [travel] 
 ---
 
 Burma (well, officially Myanmar according to the government) is of course a close neighbor of Thailand geographically. As Anchali and I found out during our recent visit it is quite different from Thailand both culturally and economically. Luckily for us a direct flight between Chiang Mai and Mandalay now exists on Air Mandalay, a private and modern airline (not to be confused with the crash prone government run Myanma (not Myanmar) Air).

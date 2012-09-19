@@ -2,7 +2,8 @@
 layout: post
 title: Flickr CakePHP Plugin
 description: "A CakePHP Flickr plugin containing a component and a helper"
-tags: [dev, cakephp] 
+date: 2010-11-07
+categories: [dev, cakephp] 
 ---
 
 This is a [CakePHP][1] plugin consisting of one component and one helper that makes integrating [Flickr][2] images into your app **really easy**. Git clone or download from [github](https://github.com/chronon/flickr).
@@ -43,14 +44,16 @@ First, you might want to take a look at this plugin's [demo project][4] code, [d
 
 Add the plugin's component and helper to your controller:
 
-{% highlight php startinline=true %}
+``` php
+<?php
 public $components = array('Flickr.Flickr');
 public $helpers = array('Flickr.Flickr');
-{% endhighlight %}
+```
 
 Using the defaults above (replacing the `api_key` and `user_id` values with your own), this would get 20 photos from `user_id`'s account with the tag "Public":
 
-{% highlight php startinline=true %}
+``` php
+<?php
 public function somephotos() {
     $params = array(
         'tags' => 'Public',
@@ -59,41 +62,43 @@ public function somephotos() {
     $photos = $this->Flickr->flickrRequest($params);
     $this->set('photos', $photos);
 }
-{% endhighlight %}
+```
 
 The $photos variable would be an array, which you or the included Flickr helper can do something with. Again, check the [Flickr API][3] for all of the available options.
 
 This example gets all of the Flickr sets for `user_id`, including everything needed to display the set thumbnail, title, and description:
 
-{% highlight php startinline=true %}
+``` php
+<?php
 public function somesets() {
     $params = array('method' => 'flickr.photosets.getList');
     $sets = $this->Flickr->flickrRequest($params);
     $this->set('sets', $sets);
 }
-{% endhighlight %}
+```
 
 ### Helper:
 
 Output the 20 photos tagged "Public" you set in the above somephotos() method:
 
-{% highlight php startinline=true %}
+``` php
+<?php
 echo $this->Flickr->getPhotos(
     $photos,
     array('type' => 'div'),
     array('rel' => 'example1', 'title' => 'flickr_title')
 );
-{% endhighlight %}
+```
 
 The resulting HTML would be:
 
-{% highlight html %}
+``` html
 <div>
     <a href="http://farm5.static.flickr.com/4079/4750870838_52fc9c7167.jpg" rel="example1" title="Doi Mae Salong">
         <img src="http://farm5.static.flickr.com/4079/4750870838_52fc9c7167_s.jpg" alt="" />
     </a>
 </div>
-{% endhighlight %}
+```
 
 The helper parameters are:
 
@@ -125,4 +130,3 @@ These values act as variables and use the corresponding values returned from Fli
  [4]: http://github.com/chronon/flickr_demos
  [5]: http://chronon.com/flickr_demos/demos/
  [6]: http://www.flickr.com/services/api/misc.urls.html
-

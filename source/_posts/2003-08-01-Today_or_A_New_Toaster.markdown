@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Today...or A New Toaster 
-tags: [thailand, sangkhlaburi] 
+date: 2003-08-01
+categories: [thailand, sangkhlaburi] 
 ---
 
 Today I got up at 7am, sat on the back of a motorbike with no front brake and not enough gas to go 6km to the Thai side of town. Then I sat on a bus (with crappy speakers) that was too small for my long legs for 220km (almost 4 hours) and ended up in Kanchanaburi.

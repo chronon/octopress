@@ -2,7 +2,8 @@
 layout: post
 title: Root, sudo, and rsnapshot
 description: "Instructions for configuring rsync or rsnapshot to copy restricted files between servers"
-tags: [sysadmin] 
+date: 2011-01-07
+categories: [sysadmin] 
 ---
 
 Introduction
@@ -37,82 +38,103 @@ be necessary).
 
 Create new backup user, lets call it `rbackup`:
     
-    $ sudo adduser rbackup
+``` sh
+$ sudo adduser rbackup
+```
 
 Login as rbackup, create an ssh key pair:
-    
-    $ su rbackup
-    $ ssh-keygen -t rsa
+
+``` sh
+$ su rbackup
+$ ssh-keygen -t rsa
+```
 
 If you are running sshd on a non-standard port (like I am), as user rbackup
 create a file named `config` in ~/.ssh. In this file, enter the host and port:
-    
-    Host zero
-        Port 12345
+
+``` apache
+Host zero
+	Port 12345
+```
 
 While still user rbackup, copy the public key `id_rsa.pub` somewhere publicly
 accessible.
 
 As your regular user (which already has ssh access to **zero**), send rbackup's
 public key from **uno** to **zero**:
-    
-    $ scp /home/rbackup/id_rsa.pub zero:~/
+
+``` sh 
+$ scp /home/rbackup/id_rsa.pub zero:~/
+```
 
 Become root, `sudo -i`. If it doesn't exists, make root's ssh directory, set
 the correct permissions, create a ssh config file:
 
-    # mkdir .ssh
-    # chmod 700 .ssh
-    # cd .ssh
-    # vim config
-
+``` sh
+root# mkdir .ssh
+root# chmod 700 .ssh
+root# cd .ssh
+root# vim config
+```
 In root's .ssh/config file:
 
-    Host zero-rsync
-        Port 12345
-        Hostname zero
-        User rbackup
-        IdentityFile /home/rbackup/.ssh/id_rsa
+``` apache
+Host zero-rsync
+	Port 12345
+	Hostname zero
+	User rbackup
+	IdentityFile /home/rbackup/.ssh/id_rsa
+```
 
 Save the file, set permissions:
 
-    # chmod 600 config
+``` sh
+root# chmod 600 config
+```
 
 ### Server: zero (server to be backed up) ###
 
 Create new backup user, lets call it `rbackup`:
     
-    $ sudo adduser rbackup
+``` sh
+$ sudo adduser rbackup
+```
 
 Make **uno's** public key `id_rsa.pub` available to user rbackup.
 
 Login as rbackup, create a .ssh directory, set permissions, create an
 `authorized_keys` file:
     
-    $ su rbackup
-    $ cd
-    $ mkdir .ssh
-    $ chmod 700 .ssh
-    $ cd .ssh
-    $ cat /home/regularuser/id_rsa.pub > authorized_keys
-    $ chmod 600 authorized_keys
+``` sh
+$ su rbackup
+$ cd
+$ mkdir .ssh
+$ chmod 700 .ssh
+$ cd .ssh
+$ cat /home/regularuser/id_rsa.pub > authorized_keys
+$ chmod 600 authorized_keys
+```
 
 Now we want to limit the use of this authorized key by allowing connections
 only from **uno**, and allowing one command only. Edit the key, and add something
 like this to the beginning of the key: 
 
-    from="192.168.100.123",command="/home/rbackup/validate-rsync.sh" ssh-rsa AX 
-    ...remainder of key...rbackup@uno
+```
+from="192.168.100.123",command="/home/rbackup/validate-rsync.sh" ssh-rsa AX 
+...remainder of key...rbackup@uno
+```
 
 While still user rbackup, create a script named `validate_rsync.sh` in your
 home directory:
 
-    $ cd
-    $ vim validate_rsync.sh
+``` sh
+$ cd
+$ vim validate_rsync.sh
+```
 
 Contents of `validate_rsync.sh`:
 
-{% highlight sh %}
+``` sh
 #!/bin/sh
 case "$SSH_ORIGINAL_COMMAND" in
   *\&*)
@@ -131,15 +153,18 @@ case "$SSH_ORIGINAL_COMMAND" in
     echo "Connection closed."
     ;;
 esac
-{% endhighlight %}
-
+```
 As your regular user (which can sudo): 
 
-    $ sudo visudo
+``` sh
+$ sudo visudo
+```
 
 Add this line to the bottom:
 
-    rbackup    ALL=NOPASSWD:/usr/bin/rsync
+```
+rbackup    ALL=NOPASSWD:/usr/bin/rsync
+```
 
 If you have the `AllowUsers` directive set for sshd in `/etc/ssh/sshd_config`,
 make sure to add the user `rbackup` to the list, and restart sshd.
@@ -147,10 +172,10 @@ make sure to add the user `rbackup` to the list, and restart sshd.
 As root or with sudo, create a simple rsync wrapper, named `rsync_wrapper.sh` at /usr/local/bin,
 containing:
 
-{% highlight sh %}
+``` sh
 #!/bin/sh
 /usr/bin/sudo /usr/bin/rsync "$@";
-{% endhighlight %}
+```
 
 Testing
 -------
@@ -159,12 +184,16 @@ Testing
 
 Become user rbackup on **uno**, attempt ssh to **zero**:
 
-    $ ssh zero
+``` sh
+$ ssh zero
+```
 
 Expected response:
 
-    Connection closed.
-    Connection to zero closed.
+``` sh
+Connection closed.
+Connection to zero closed.
+```
 
 The "Connection closed." with the period at the end tells us the
 `validate_rsync.sh` worked as expected (echoing the last Connection closed).
@@ -174,19 +203,25 @@ The "Connection closed." with the period at the end tells us the
 Become root on **uno**, attempt to ssh to zero-rsync (the alias set in root's
 .ssh/config):
 
-    # ssh zero-rsync
+``` sh
+root# ssh zero-rsync
+```
 
 Expected response:
 
-    Connection closed.
-    Connection to zero closed.
+``` sh
+Connection closed.
+Connection to zero closed.
+```
 
 ### Test 3 ###
 
 Become root on **uno**, attempt to rsync something on **zero** that is restricted:
 
-    # rsync -ae ssh --rsync-path='rsync_wrapper.sh' zero-rsync:/etc
-    /home/regularuser/tmp/
+``` sh
+root# rsync -ae ssh --rsync-path='rsync_wrapper.sh' zero-rsync:/etc
+/home/regularuser/tmp/
+```
 
 Expected response: you should have a copy of **zero's** /etc directory in
 regular users tmp directory (or wherever). Important things to note in the above
@@ -200,8 +235,10 @@ If the above tests all work, setting up [rsnapshot][rsnapshot] is easy. Check
 any other guide for general setup info, the relevant stuff for us to use in our
 rsnapshot.conf is:
 
-    rsync_long_args --rsync-path=rsync_wrapper.sh --delete --numeric-ids --relative --delete-excluded
-    backup rbackup@zero-rsync:/etc zero/
+```
+rsync_long_args --rsync-path=rsync_wrapper.sh --delete --numeric-ids --relative --delete-excluded
+backup rbackup@zero-rsync:/etc zero/
+```
 
 Remember the rsnapshot.conf file needs tabs. The `rsync_long_args` setting is
 rsnapshot's default rsync arguments, with our `--rsync-path=rsync_wrapper.sh`

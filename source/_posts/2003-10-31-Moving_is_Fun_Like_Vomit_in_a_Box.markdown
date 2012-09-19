@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Moving is Fun Like Vomit in a Box 
-tags: [thailand, sangkhlaburi] 
+date: 2003-10-31
+categories: [thailand, sangkhlaburi] 
 ---
 
 Some theories suggest humans have an internal counter or limit governing the numbers of times one can move/change houses in a lifetime. Possibly I am getting close to that limit, or maybe moving in a (very?) foreign country amplifies the effect. Or maybe I'm just getting old and lazy. No matter how you look at it, moving is hard work, and I'm glad it's over. I won't be moving again...that is...until next time.

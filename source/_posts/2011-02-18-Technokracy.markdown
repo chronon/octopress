@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Technokracy (Retro Spiller) 
-tags: [technokracy] 
+date: 2011-02-18
+categories: [technokracy] 
 ---
 
 This is a website consisting of various applications in turning, spurning,
@@ -68,6 +69,10 @@ information.
 > Concord Unrest Unit Necrotic Sound Turn, Introduce Corn Stun Reduction Scorn
 > Nut.
 
-### V8.0 2011-?
+### V8.0 2011-2012
 
 > "transform your text into a monster"
+
+### V9.0 2012-?
+
+> "a blogging framework for hackers."

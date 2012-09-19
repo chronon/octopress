@@ -3,7 +3,7 @@ layout: post
 title: Mac Mail.app and S/MIME Certificates 
 description: "Quick steps to setting up a free email certificate on a Mac"
 date: 2012-02-09
-categories: os-x
+categories: [os-x]
 ---
 
 There is lots of information out there on how to get and install a free email certificate, but here it is again condensed and step-by-step. When complete, you'll be able to sign and encrypt email messages with others who are making use of personal certificates.

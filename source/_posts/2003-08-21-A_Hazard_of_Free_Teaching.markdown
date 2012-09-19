@@ -1,7 +1,8 @@
 ---
 layout: post
 title: A Hazard of Free Teaching 
-tags: [thailand, sangkhlaburi] 
+date: 2003--08-21
+categories: [thailand, sangkhlaburi] 
 ---
 
 Anchali and I teach English for free for a variety of reasons. Probably the biggest one is many children and teenagers here have an incredible desire to learn and really try. The ones still in school (under 16) come to our house when school is finished, and study with Anchali. I teach the older ones (ages 16 to 20). The parents of our students and the people that know what we do are always extra nice to us...sometimes to the point of inconvenience!

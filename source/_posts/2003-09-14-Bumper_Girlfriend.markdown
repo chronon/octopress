@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Bumper Girlfriend 
-tags: [thailand] 
+date: 2003-09-14
+categories: [thailand] 
 ---
 
 Just forget Monopoly - why not play Bumper Girlfriend instead! Bumper Girlfriend = &copy; grrr, ying, kat, & sp tomato, 2002-2003, Chiang Mai, Thailand, All rights (and wrongs) inclusive!

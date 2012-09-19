@@ -1,7 +1,8 @@
 ---
 layout: post
 title: The Life of Dukdik and Friends 
-tags: [thailand, sangkhlaburi] 
+date: 2003-09-03
+categories: [thailand, sangkhlaburi] 
 ---
 
 Being a dog in the Mon village Baan Wangka is hard, dangerous work. We are not sure of Dukdik's puppy- hood, but he adopted us about 6 months ago when we moved here. Anchali loves dogs, and in Chiang Mai always pestered me to get one. Being the practical, forward thinking person that I am, I always said NO, we must wait until we have a good house and area for a dog. All of that changed when we arrived in Baan Wangka!
