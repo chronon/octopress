@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Hazard of Free Teaching 
-date: 2003--08-21
+date: 2003-08-21
 categories: [thailand, sangkhlaburi] 
 ---
 
