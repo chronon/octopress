@@ -4,9 +4,9 @@ require "stringex"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
-ssh_user       = "chronon@uno.chronon.us"
-ssh_port       = "61778"
-document_root  = "/home/chronon/www/technokracy.net/public/"
+ssh_user       = ENV['OCTO_SSH_USER']
+ssh_port       = ENV['OCTO_SSH_PORT']
+document_root  = ENV['OCTO_SSH_ROOT']
 rsync_delete   = true
 deploy_default = "rsync"
 
