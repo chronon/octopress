@@ -53,3 +53,13 @@ aside.sidebar {
 ul, ol {
   margin-left: 1em;
 }
+
+.flickr {
+  text-align: center;
+}
+aside.sidebar .flickr img {
+  border: none;
+}
+aside.sidebar section .flickr img {
+  margin-top: 20px;
+}
