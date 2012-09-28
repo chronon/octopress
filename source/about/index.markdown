@@ -1,8 +1,10 @@
 ---
-layout: post
-title: Technokracy (Retro Spiller) 
-date: 2011-02-18
-categories: [technokracy] 
+layout: page
+title: "Technokracy (Retro Spiller)"
+date: 2012-09-28 14:31
+comments: true
+sharing: true
+footer: true
 ---
 
 This is a website consisting of various applications in turning, spurning,
@@ -75,4 +77,5 @@ information.
 
 ### V9.0 2012-?
 
-> "a blogging framework for hackers."
+> "a blogging framework for hackers." the source of this, here, is [here](https://github.com/chronon/octopress/tree/technokracy).
+
