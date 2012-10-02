@@ -97,3 +97,13 @@ google_analytics_tracking_id: UA-3040755-2
 
 # Facebook Like
 facebook_like: false
+
+# Flickr Badge (http://www.flickr.com/badge.gne)
+flickr_user: 33337149%40N00   # user id, not username (find with http://idgettr.com)
+flickr_count: 3               # number of photos to show
+flickr_display: random        # random or latest
+flickr_size: m                # t (thumbnail), s (small square), m (medium)
+# source: user (all user's public photos), user_tag (user's tagged photos),
+# all (everyone's public photos), all_tag (all public photos tagged with tag)
+flickr_source: user
+flickr_tag:                   # set if flickr_source is set to user_tag or all_tag
