@@ -6,6 +6,8 @@ date: 2011-01-07
 categories: [sysadmin] 
 ---
 
+
+
 Introduction
 ------------
 
@@ -120,7 +122,7 @@ only from **uno**, and allowing one command only. Edit the key, and add somethin
 like this to the beginning of the key: 
 
 ```
-from="192.168.100.123",command="/home/rbackup/validate-rsync.sh" ssh-rsa AX 
+from="192.168.100.123",command="/home/rbackup/validate_rsync.sh" ssh-rsa AX 
 ...remainder of key...rbackup@uno
 ```
 
@@ -154,6 +156,12 @@ case "$SSH_ORIGINAL_COMMAND" in
     ;;
 esac
 ```
+Make sure that `validate_rsync.sh` is executable by user (and group) rbackup:
+
+``` sh
+$ chmod 754 validate_rsync.sh
+```
+
 As your regular user (which can sudo): 
 
 ``` sh
