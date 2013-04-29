@@ -14,6 +14,34 @@ php-markdown.php.
 Installation:
 -------------
 
+**Using [Composer](http://getcomposer.org/)/[Packagist](https://packagist.org):**
+
+If you are using composer, require `chronon/markdown`:
+
+```
+{
+    "require": {
+        "chronon/markdown": "*"
+    },
+	"config": {
+        "vendor-dir": "Vendor"
+    }
+}
+```
+This will install the plugin into `Plugin/Markdown`, and install Markdown lib (from Packagist) into
+your `Vendor` directory.
+
+In `Config/bootstrap.php`, import composer's autoload file:
+
+```php
+<?php
+App::import('Vendor', array('file' => 'autoload'));
+```
+
+**Using git:**
+
+If you are **not** using composer, clone the repository:
+
 ```sh
 git clone git@github.com:chronon/CakePHP-Markdown-Plugin.git APP/Plugin/Markdown
 ```

@@ -21,11 +21,37 @@ library requires PHP 5 with cURL support.
 Installation:
 -------------
 
+**Using [Composer](http://getcomposer.org/)/[Packagist](https://packagist.org):**
+
+In your project `composer.json` file:
+
+```
+{
+	"require": {
+		"chronon/stripe": "*"
+	},
+	"config": {
+        "vendor-dir": "Vendor"
+    }
+}
+```
+
+This will install the plugin into `Plugin/MobileDetect`, and install the Stripe library 
+(from Packagist) into your `Vendor` directory.
+
+In your app's `Config/bootstrap.php`, import composer's autoload file:
+
+```php
+<?php
+App::import('Vendor', array('file' => 'autoload'));
+```
+**Using git:**
+
 You will need the component (packaged as a plugin), and Stripe's PHP library (not included). The
 Stripe library needs to be in this plugin's Vendor directory and must be named 'Stripe'. Using git, 
 something like this:
 
-``` sh
+```sh
 git clone git@github.com:chronon/CakePHP-StripeComponent-Plugin.git APP/Plugin/Stripe  
 git clone git://github.com/stripe/stripe-php.git APP/Plugin/Stripe/Vendor/Stripe
 ```

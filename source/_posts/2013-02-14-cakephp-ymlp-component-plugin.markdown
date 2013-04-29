@@ -28,7 +28,19 @@ Tested with CakePHP 2.3.x. Requires PHP 5 with cURL support.
 Installation:
 -------------
 
-Using git, something like this:
+**Using [Composer](http://getcomposer.org/)/[Packagist](https://packagist.org):**
+
+In your project `composer.json` file:
+
+```
+{
+	"require": {
+		"chronon/ymlp": "*"
+	}
+}
+```
+
+**Using git:**
 
 ```sh
 git clone git@github.com:chronon/CakePHP-YmlpComponent-Plugin.git APP/Plugin/Ymlp  
