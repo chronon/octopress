@@ -13,10 +13,10 @@ The [source code][5] for these demos is freely available, so it should be very e
 Available demos:
 ----------------
 
-* [Raw](http://chronon.com/flickr_demos/demos/raw/)
-* [Colorbox](http://chronon.com/flickr_demos/demos/colorbox/)
-* [Galleriffic](http://chronon.com/flickr_demos/demos/galleriffic/)
-* [Photostack](http://chronon.com/flickr_demos/demos/photostack/)
+* [Raw](http://flickrdemo.chronon.us/flickr_demos/demos/raw/)
+* [Colorbox](http://flickrdemo.chronon.us/flickr_demos/demos/colorbox/)
+* [Galleriffic](http://flickrdemo.chronon.us/flickr_demos/demos/galleriffic/)
+* [Photostack](http://flickrdemo.chronon.us/flickr_demos/demos/photostack/)
 
 When viewing the controller code for each demo, the $params array is merged with some defaults I've set in /app/bootstrap.php. Setting defaults for this Flickr plugin is totally optional, but makes for less code in your controller. The defaults I've set for all of these demos is:
 
