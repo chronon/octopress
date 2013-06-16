@@ -6,7 +6,12 @@ date: 2011-01-07
 categories: [sysadmin] 
 ---
 
+Update - June 2013
+------------------
 
+A few steps have recently been updated, thanks in part to a few contributors. Notably, the `rbackup` 
+user doesn't necessarily need to be created on the backup server (uno) as described in the original
+post.
 
 Introduction
 ------------
@@ -32,66 +37,55 @@ server while maintaining original file attributes and permissions. Whew.
 Configuration
 -------------
 
-The command examples here are specific to Debian (and therefore Ubuntu), so
+The command examples here are specific to Debian and Ubuntu, so
 adjust to your distribution accordingly (though little if any adjustment should
 be necessary). 
 
 ### Server: uno (backup server) ###
 
-Create new backup user, lets call it `rbackup`:
-    
-``` sh
-$ sudo adduser rbackup
-```
-
-Login as rbackup, create an ssh key pair:
+Become root, create an ssh key pair:
 
 ``` sh
-$ su rbackup
-$ ssh-keygen -t rsa
+root# ssh-keygen -t rsa
 ```
 
-If you are running sshd on a non-standard port (like I am), as user rbackup
-create a file named `config` in ~/.ssh. In this file, enter the host and port:
-
-``` apache
-Host zero
-	Port 12345
-```
-
-While still user rbackup, copy the public key `id_rsa.pub` somewhere publicly
-accessible.
-
-As your regular user (which already has ssh access to **zero**), send rbackup's
-public key from **uno** to **zero**:
-
-``` sh 
-$ scp /home/rbackup/id_rsa.pub zero:~/
-```
-
-Become root, `sudo -i`. If it doesn't exists, make root's ssh directory, set
-the correct permissions, create a ssh config file:
+When naming the key, don't accept the default. Instead, enter
 
 ``` sh
-root# mkdir .ssh
-root# chmod 700 .ssh
-root# cd .ssh
-root# vim config
+/root/.ssh/id-rbackup_rsa
+```
+
+We're naming the key pair with 'rbackup' in it to keep track of what the keys are for.
+
+As root, create a ssh config file:
+
+``` sh
+root# vim .ssh/config
 ```
 In root's .ssh/config file:
 
 ``` apache
 Host zero-rsync
-	Port 12345
+	Port 456 # only required if zero is running sshd on a non-standard port
 	Hostname zero
 	User rbackup
-	IdentityFile /home/rbackup/.ssh/id_rsa
+	IdentityFile /root/.ssh/id-rbackup_rsa
 ```
 
 Save the file, set permissions:
 
 ``` sh
 root# chmod 600 config
+```
+
+While still root, copy the public key `id-rbackup_rsa.pub` somewhere publicly
+accessible, such as your regular user's home directory.
+
+As your regular user (which already has ssh access to **zero**), send this public key from **uno** 
+to **zero**:
+
+``` sh 
+$ scp ~/id-rbackup_rsa.pub zero:~/
 ```
 
 ### Server: zero (server to be backed up) ###
@@ -102,7 +96,7 @@ Create new backup user, lets call it `rbackup`:
 $ sudo adduser rbackup
 ```
 
-Make **uno's** public key `id_rsa.pub` available to user rbackup.
+Make **uno's** public key `id-rbackup_rsa.pub` available to user rbackup.
 
 Login as rbackup, create a .ssh directory, set permissions, create an
 `authorized_keys` file:
@@ -113,7 +107,7 @@ $ cd
 $ mkdir .ssh
 $ chmod 700 .ssh
 $ cd .ssh
-$ cat /home/regularuser/id_rsa.pub > authorized_keys
+$ cat /home/regularuser/id-rbackup_rsa.pub > authorized_keys
 $ chmod 600 authorized_keys
 ```
 
